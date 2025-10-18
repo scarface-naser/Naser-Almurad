@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="../images/cyber-criminal.png" />
+
+    <title>Project Detail — My Project</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <div class="links_container">
+        <a class="back-link" href="/index.html">← Back to Portfolio</a>
+
+        <div style="display: flex">
+          <lottie-player
+            src="gitHubiCon.json"
+            background="transparent"
+            speed="1"
+            style="width: 50px; height: 50px"
+            loop
+            autoplay
+          >
+          </lottie-player>
+          <a
+            class="github_link"
+            href="https://github.com/scarface-naser/ecommerce"
+            target="_blank"
+            class="github-button"
+          >
+            Source Code
+          </a>
+        </div>
+      </div>
+
+      <article class="project-card" aria-labelledby="project-title">
+        <header class="project-header">
+          <div class="header-container">
+            <h1 id="project-title" class="project-title">
+              🛒 E-Commerce Web Application
+            </h1>
+          </div>
+        </header>
+        <div class="video-wrapper" style="margin-bottom: 1rem">
+          <video
+            autoplay
+            controls
+            playsinline
+            preload="metadata"
+            poster="poster.jpg"
+          >
+            <source src="../videos/project2.MOV" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+
+        <section class="project-description">
+          <pre
+            style="
+              margin-bottom: 1rem;
+              line-height: 1.6;
+              max-width: 900px;
+              text-align: justify;
+              white-space: pre-wrap;
+              word-wrap: break-word;
+              line-height: 1.6;
+            "
+          >
+<strong>🛒 E-Commerce Web Application (Next.js, MongoDB, Cloudinary) </strong>
+
+A full-stack online store built with <strong>Next.js</strong>, featuring secure user authentication, dynamic product management, and cloud-based media storage.
+This project demonstrates modern web development practices with a focus on scalability, performance, and clean UI/UX.
+
+<strong>Key Features </strong>
+
+<strong>🧩Full-Stack Functionality:</strong> Integrated <strong>MongoDB</strong> for data persistence and <strong>Cloudinary</strong> for image management.
+<strong>⚡Next.js Framework:</strong> Server-side rendering and API routes for efficient data handling.
+<strong>🛍️Product Management:</strong> Admin dashboard for managing product listings and user data.
+<strong>🌈Responsive Design:</strong> Fully responsive and optimized for desktop and mobile.
+<strong>☁️Cloud Integration:</strong> Product images are securely stored and served from Cloudinary.
+<strong>🔐Authentication & Authorization:</strong> Users must sign in to view products; admins have full CRUD access (add, update, delete).
+
+ <strong>Tech Stack</strong>
+
+Frontend: Next.js 
+Backend: Next.js API routes, Node.js
+Database: MongoDB / Mongoose
+Media Storage: Cloudinary
+Authentication: JWT / NextAuth 
+
+
+
+          </pre>
+
+          <div class="project-footer">
+            <span class="tag">Next.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Cloudinary</span>
+          </div>
+        </section>
+      </article>
+    </main>
+    <br />
+  </body>
+</html>

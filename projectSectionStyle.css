@@ -1,0 +1,262 @@
+/* Reset and base styles */
+
+/* CSS Variables */
+:root {
+  --electric-border-color: #00fffb;
+  --electric-light-color: oklch(from var(--electric-border-color) l c h);
+  --gradient-color: oklch(from var(--electric-border-color) 0.3 calc(c / 2) h / 0.4);
+  --color-neutral-900: oklch(0.185 0 0);
+
+}
+
+.bodyOfProject {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #151f28;
+  color: oklch(0.985 0 0);
+  height: auto;
+  padding-bottom: 70px;
+  /* overflow: hidden; */
+}
+
+.project_section {
+  text-align: center;
+}
+
+/* Main container */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+/* SVG positioning */
+.svg-container {
+  position: absolute;
+}
+
+/* Card container */
+.card-container {
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 24px;
+  position: relative;
+  background: linear-gradient(-30deg,
+      var(--gradient-color),
+      transparent,
+      var(--gradient-color)),
+    linear-gradient(to bottom,
+      var(--color-neutral-900),
+      var(--color-neutral-900));
+}
+
+
+
+/* Inner container */
+.inner-container {
+  position: relative;
+}
+
+/* Border layers */
+.border-outer {
+  border: 2px solid #00fffb;
+  border-radius: 24px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+}
+
+.main-card {
+  width: 23em;
+  height: 16em;
+  border-radius: 24px;
+  margin-top: -4px;
+  margin-left: -4px;
+  filter: url(#turbulent-displace);
+  transition: .3s;
+}
+
+.card-container:hover .main-card {
+  border: 2px solid var(--electric-border-color);
+
+}
+
+/* Glow effects */
+.glow-layer-1 {
+  border: 2px solid #00fffb;
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(1px);
+}
+
+.glow-layer-2 {
+  border: 2px solid var(--electric-light-color);
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(4px);
+}
+
+/* Overlay effects */
+.overlay-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  opacity: 1;
+  mix-blend-mode: overlay;
+  transform: scale(1.1);
+  filter: blur(16px);
+  background: linear-gradient(-30deg,
+      white,
+      transparent 30%,
+      transparent 70%,
+      white);
+}
+
+.overlay-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  transform: scale(1.1);
+  filter: blur(16px);
+  background: linear-gradient(-30deg,
+      white,
+      transparent 30%,
+      transparent 70%,
+      white);
+}
+
+/* Background glow */
+.background-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  filter: blur(32px);
+  transform: scale(1.1);
+  opacity: 0.3;
+  z-index: -1;
+  background: linear-gradient(-30deg,
+      var(--electric-light-color),
+      transparent,
+      var(--electric-border-color));
+}
+
+
+/* ffffffffffffffffffffffffff */
+.content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22em;
+  z-index: 0;
+  margin-left: 10px;
+  /* Make sure it's above background layers */
+}
+
+.project-video video {
+  padding-top: 10px;
+  border-radius: 24px;
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  /* يعرض كامل الفيديو بدون قص */
+}
+
+.project-info {
+  margin: 8px;
+  object-fit: contain;
+}
+
+.project-category {
+  padding: 5px;
+  color: #00fffb;
+}
+
+.project-title {
+  padding: 5px;
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 1rem;
+  }
+
+  .card-container {
+    width: 100%;
+    max-width: 95%;
+    height: auto;
+
+  }
+
+  .main-card {
+    width: auto;
+    height: auto;
+    min-height: 12em;
+  }
+
+  .border-outer {
+    padding-right: 2px;
+    padding-bottom: 2px;
+  }
+
+  .content-container {
+    width: auto;
+    margin-left: 0;
+    padding: 0.5em;
+  }
+
+  .project-video video {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .project-info {
+    display: none;
+  }
+
+  /* Optional: Reduce blur for performance on small screens */
+  .glow-layer-1,
+  .glow-layer-2,
+  .overlay-1,
+  .overlay-2,
+  .background-glow {
+    filter: blur(8px);
+  }
+
+
+}

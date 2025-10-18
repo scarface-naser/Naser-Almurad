@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="../images/cyber-criminal.png" />
+
+    <title>Project Detail — My Project</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <div class="links_container">
+        <a class="back-link" href="/index.html">← Back to Portfolio</a>
+
+        <div style="display: flex">
+          <lottie-player
+            src="gitHubiCon.json"
+            background="transparent"
+            speed="1"
+            style="width: 50px; height: 50px"
+            loop
+            autoplay
+          >
+          </lottie-player>
+          <a
+            class="github_link"
+            href="https://github.com/scarface-naser/onlinestore"
+            target="_blank"
+            class="github-button"
+          >
+            Source Code
+          </a>
+        </div>
+      </div>
+
+      <article class="project-card" aria-labelledby="project-title">
+        <header class="project-header">
+          <div class="header-container">
+            <h1 id="project-title" class="project-title">
+              🛍️ Redux Store – React & Express E-Commerce
+            </h1>
+          </div>
+        </header>
+
+        <div class="video-wrapper" style="margin-bottom: 1rem">
+          <video
+            autoplay
+            muted
+            playsinline
+            preload="metadata"
+            poster="poster.jpg"
+            controls
+            onvolumechange="this.muted=true"
+          >
+            <source src="../videos/project5.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+
+        <section class="project-description">
+          <pre
+            style="
+              margin-bottom: 1rem;
+              line-height: 1.6;
+              max-width: 900px;
+              text-align: justify;
+              white-space: pre-wrap;
+              word-wrap: break-word;
+              line-height: 1.6;
+            "
+          >
+<strong>🛍️ Redux Store – Full-Stack E-Commerce App (React, Redux, Express, MongoDB)</strong>
+
+A modern e-commerce platform built with <strong>React</strong>, <strong>Redux</strong>, <strong>Express</strong>, and <strong>MongoDB</strong>.  
+Users can browse products, add them to a shopping cart, and manage their orders with real-time state management.
+
+<strong>Key Features</strong>
+
+<strong>🛒 Redux State Management:</strong> Efficiently manages global state for products, cart, and user sessions.  
+<strong>⚡ Express & MongoDB Backend:</strong> REST API handles product data, orders, and user authentication.  
+<strong>📦 Product Management:</strong> Add, update, and delete products from the store (admin panel included).  
+<strong>💳 Shopping Cart:</strong> Add items, update quantities, and calculate totals dynamically.  
+<strong>🔐 Authentication & Authorization:</strong> Users must sign in to purchase; admins have full control over products and orders.  
+<strong>📱 Responsive UI:</strong> Clean, modern design optimized for desktop and mobile.  
+<strong>🌐 API Integration:</strong> Frontend communicates with Express API for CRUD operations in MongoDB.
+
+<strong>Tech Stack</strong>
+
+Frontend: React.js, Redux  
+Backend: Express.js, Node.js  
+Database: MongoDB / Mongoose  
+State Management: Redux  
+Features: Shopping cart, user authentication, admin CRUD, real-time updates  
+Design: Responsive, modern, and user-friendly
+    </pre>
+
+          <div class="project-footer">
+            <span class="tag">React.js</span>
+            <span class="tag">Redux</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </section>
+      </article>
+    </main>
+    <br />
+  </body>
+</html>

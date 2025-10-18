@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="projectSectionStyle.css" />
+    <link rel="icon" type="image/png" href="./images/cyber-criminal.png" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>Naser Almurad</title>
+
+  </head>
+   <style>
+    .split-text-container {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ffea;
+    overflow: hidden;
+}
+
+.text-part {
+    display: inline-block;
+    position: relative;
+    transform: translateX(0);
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.text-part.left {
+    transform: translateX(-200%);
+    animation-name: slide-in-left;
+}
+
+.text-part.right {
+    transform: translateX(200%);
+    animation-name: slide-in-right;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+   </style>
+  <body>
+    <header>
+      <div class="masking-container">
+        <a href="#" class="logo masked-text">Naser Almurad</a>
+    <!-- <h1 class="masked-text">Masked Animation</h1> -->
+</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="navigation" id="navigation">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="main">
+      <div style="padding-top: 80px;">
+        <h2>Hello, I'm Naser</h2>
+        <div class="split-text-container">
+    <span class="text-part left">Full Stack JS & </span> 
+    <span class="text-part right">n&n</span>
+</div>
+        <h3>My hobby solve technical problem</h3>
+        <a href="#projects" class="main-btn">View my work</a>
+        <div class="social-icons">
+          <a href="https://github.com/scarface-naser" title="github">
+            <lottie-player
+            src="gitHubiCon.json"
+            background="transparent"
+            speed="1"
+            style="width: 60px; height: 60px"
+            loop
+            autoplay
+          >
+          </a>
+          <a href="https://www.instagram.com/infinity.ai1?igsh=MWdpeTVmN2VicGhqOA%3D%3D&utm_source=qr" title="Instagram"><lottie-player
+            src="instagramIcon.json"
+            background="transparent"
+            speed="1"
+            style="width: 60px; height: 60px"
+            loop
+            autoplay
+          ></i>
+        </a>
+
+          <a href="#" title="LinkedIN">
+            <lottie-player
+            src="linkedinIcon.json"
+            background="transparent"
+            speed="1"
+            style="width: 60px; height: 60px"
+            loop
+            autoplay>
+          </a>
+
+        </div>
+        <br/>
+        <div class="cv_container" onclick="downloadCV()">
+          <lottie-player
+            src="searchingForProfile.json"
+            background="transparent"
+            speed="1"
+            style="width: 200px; height: 200px"
+            loop
+            autoplay
+          ></lottie-player>
+          <h2>Download myCV</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" id="services">
+      <div class="services_container">
+        <h2 class="title" >Services</h2>
+        <lottie-player
+              class="services_icon"
+              src="listPurple.json"
+              background="transparent"
+              speed="1"
+              style="width: 150px; height: 150px"
+              loop
+              autoplay>
+      </div>
+      <br>
+      <div class="content">
+                <div class="card">
+          <div class="icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="info">
+            <h3>Full Stack App Development</h3>
+            <p>
+              Design and develop complete web applications from front-end to
+              back-end using modern technologies, delivering responsive, secure,
+              and scalable solutions.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="info">
+            <h3>AI Agents</h3>
+            <p>
+              Build intelligent AI agents capable of understanding, reasoning,
+              and automating complex tasks using advanced machine learning and
+              natural language processing.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="info">
+            <h3>Microsoft Certified Professional (MCP)</h3>
+            <p>
+              Certified expertise in Microsoft technologies, providing reliable
+              solutions in networking, system administration, and enterprise IT
+              support.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-edit"></i>
+          </div>
+          <div class="info">
+            <h3>DataBase</h3>
+            <p>
+              Design, manage, and optimize databases for performance and
+              accuracy, while ensuring precise and organized data entry to
+              support business operations.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <div class="info">
+            <h3>Video Production</h3>
+            <p>
+              Record and shoot videos taking into consideration proper settings,
+              followed by production & post-production work
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-paint-brush"></i>
+            <!-- You can change the icon if needed -->
+          </div>
+          <div class="info">
+            <h3>Designing</h3>
+            <p>
+              Create stunning visuals, user interfaces, and branding materials
+              that blend creativity with functionality, using modern design
+              tools and principles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="bodyOfProject" id="projects">
+      <h1 class="project_section">Projects</h1>
+      <br /><br />
+      <br />
+      <main class="main-container">
+        <svg class="svg-container">
+          <defs>
+            <filter
+              id="turbulent-displace"
+              colorInterpolationFilters="sRGB"
+              x="-20%"
+              y="-20%"
+              width="140%"
+              height="140%"
+            >
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="1"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                <animate
+                  attributeName="dy"
+                  values="700; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="1"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                <animate
+                  attributeName="dy"
+                  values="0; -700"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="2"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+                <animate
+                  attributeName="dx"
+                  values="490; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="2"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+                <animate
+                  attributeName="dx"
+                  values="0; -490"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feComposite
+                in="offsetNoise1"
+                in2="offsetNoise2"
+                result="part1"
+              />
+              <feComposite
+                in="offsetNoise3"
+                in2="offsetNoise4"
+                result="part2"
+              />
+              <feBlend
+                in="part1"
+                in2="part2"
+                mode="color-dodge"
+                result="combinedNoise"
+              />
+
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="combinedNoise"
+                scale="30"
+                xChannelSelector="R"
+                yChannelSelector="B"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <a href="./projects_pages/project1.html">
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer">
+                <div class="main-card"></div>
+              </div>
+              <div class="glow-layer-1"></div>
+              <div class="glow-layer-2"></div>
+            </div>
+
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+
+            <!-- content of card -->
+
+            <div class="content-container">
+              <div class="project-video">
+                <video
+                  src="./videos/project1.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controlslist="nodownload  noremoteplayback"
+                ></video>
+              </div>
+              <div class="project-info">
+                <p class="project-category">Full Stack Website</p>
+                <strong class="project-title">
+                  <span style="color: #00fffb">Modern WebApp more...</span>
+                </strong>
+              </div>
+
+              <!-- content of card end here -->
+            </div>
+          </div>
+        </a>
+
+        <svg class="svg-container">
+          <defs>
+            <filter
+              id="turbulent-displace"
+              colorInterpolationFilters="sRGB"
+              x="-20%"
+              y="-20%"
+              width="140%"
+              height="140%"
+            >
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="1"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                <animate
+                  attributeName="dy"
+                  values="700; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="1"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                <animate
+                  attributeName="dy"
+                  values="0; -700"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="2"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+                <animate
+                  attributeName="dx"
+                  values="490; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="2"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+                <animate
+                  attributeName="dx"
+                  values="0; -490"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feComposite
+                in="offsetNoise1"
+                in2="offsetNoise2"
+                result="part1"
+              />
+              <feComposite
+                in="offsetNoise3"
+                in2="offsetNoise4"
+                result="part2"
+              />
+              <feBlend
+                in="part1"
+                in2="part2"
+                mode="color-dodge"
+                result="combinedNoise"
+              />
+
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="combinedNoise"
+                scale="30"
+                xChannelSelector="R"
+                yChannelSelector="B"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <a href="./projects_pages/project2.html">
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer">
+                <div class="main-card"></div>
+              </div>
+              <div class="glow-layer-1"></div>
+              <div class="glow-layer-2"></div>
+            </div>
+
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+
+            <!-- content of card -->
+
+            <div class="content-container">
+              <div class="project-video">
+                <video
+                  src="./videos/project2.MOV"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controlslist="nodownload  noremoteplayback"
+                ></video>
+              </div>
+              <div class="project-info">
+                <p class="project-category">Next.js, MongoDB, Cloudinary</p>
+                <strong class="project-title">
+                  <span style="color: #00fffb">E-Commerce Web more...</span>
+                </strong>
+              </div>
+
+              <!-- content of card end here -->
+            </div>
+          </div>
+        </a>
+
+
+
+                <svg class="svg-container">
+          <defs>
+            <filter
+              id="turbulent-displace"
+              colorInterpolationFilters="sRGB"
+              x="-20%"
+              y="-20%"
+              width="140%"
+              height="140%"
+            >
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="1"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                <animate
+                  attributeName="dy"
+                  values="700; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="1"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                <animate
+                  attributeName="dy"
+                  values="0; -700"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="2"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+                <animate
+                  attributeName="dx"
+                  values="490; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="2"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+                <animate
+                  attributeName="dx"
+                  values="0; -490"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feComposite
+                in="offsetNoise1"
+                in2="offsetNoise2"
+                result="part1"
+              />
+              <feComposite
+                in="offsetNoise3"
+                in2="offsetNoise4"
+                result="part2"
+              />
+              <feBlend
+                in="part1"
+                in2="part2"
+                mode="color-dodge"
+                result="combinedNoise"
+              />
+
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="combinedNoise"
+                scale="30"
+                xChannelSelector="R"
+                yChannelSelector="B"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <a href="./projects_pages/project3.html">
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer">
+                <div class="main-card"></div>
+              </div>
+              <div class="glow-layer-1"></div>
+              <div class="glow-layer-2"></div>
+            </div>
+
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+
+            <!-- content of card -->
+
+            <div class="content-container">
+              <div class="project-video">
+                <video
+                  src="./videos/project3.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controlslist="nodownload  noremoteplayback"
+                ></video>
+              </div>
+              <div class="project-info">
+                <p class="project-category">React & Firebase </p>
+                <strong class="project-title">
+                  <span style="color: #00fffb">A fully dynamic React more...</span>
+                </strong>
+              </div>
+
+              <!-- content of card end here -->
+            </div>
+          </div>
+        </a>
+
+
+
+
+        
+                <svg class="svg-container">
+          <defs>
+            <filter
+              id="turbulent-displace"
+              colorInterpolationFilters="sRGB"
+              x="-20%"
+              y="-20%"
+              width="140%"
+              height="140%"
+            >
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="1"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                <animate
+                  attributeName="dy"
+                  values="700; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="1"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                <animate
+                  attributeName="dy"
+                  values="0; -700"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="2"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+                <animate
+                  attributeName="dx"
+                  values="490; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="2"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+                <animate
+                  attributeName="dx"
+                  values="0; -490"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feComposite
+                in="offsetNoise1"
+                in2="offsetNoise2"
+                result="part1"
+              />
+              <feComposite
+                in="offsetNoise3"
+                in2="offsetNoise4"
+                result="part2"
+              />
+              <feBlend
+                in="part1"
+                in2="part2"
+                mode="color-dodge"
+                result="combinedNoise"
+              />
+
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="combinedNoise"
+                scale="30"
+                xChannelSelector="R"
+                yChannelSelector="B"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <a href="./projects_pages/project4.html">
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer">
+                <div class="main-card"></div>
+              </div>
+              <div class="glow-layer-1"></div>
+              <div class="glow-layer-2"></div>
+            </div>
+
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+
+            <!-- content of card -->
+
+            <div class="content-container">
+              <div class="project-video">
+                <video
+                  src="./videos/project4.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controlslist="nodownload  noremoteplayback"
+                ></video>
+              </div>
+              <div class="project-info">
+                <p class="project-category">React SmartBudget Project</p>
+                <strong class="project-title">
+                  <span style="color: #00fffb">Modern React SmartBudget more...</span>
+                </strong>
+              </div>
+
+              <!-- content of card end here -->
+            </div>
+          </div>
+        </a>
+
+
+
+                        <svg class="svg-container">
+          <defs>
+            <filter
+              id="turbulent-displace"
+              colorInterpolationFilters="sRGB"
+              x="-20%"
+              y="-20%"
+              width="140%"
+              height="140%"
+            >
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="1"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                <animate
+                  attributeName="dy"
+                  values="700; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="1"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                <animate
+                  attributeName="dy"
+                  values="0; -700"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="2"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+                <animate
+                  attributeName="dx"
+                  values="490; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="2"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+                <animate
+                  attributeName="dx"
+                  values="0; -490"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feComposite
+                in="offsetNoise1"
+                in2="offsetNoise2"
+                result="part1"
+              />
+              <feComposite
+                in="offsetNoise3"
+                in2="offsetNoise4"
+                result="part2"
+              />
+              <feBlend
+                in="part1"
+                in2="part2"
+                mode="color-dodge"
+                result="combinedNoise"
+              />
+
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="combinedNoise"
+                scale="30"
+                xChannelSelector="R"
+                yChannelSelector="B"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <a href="./projects_pages/project5.html">
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer">
+                <div class="main-card"></div>
+              </div>
+              <div class="glow-layer-1"></div>
+              <div class="glow-layer-2"></div>
+            </div>
+
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+
+            <!-- content of card -->
+
+            <div class="content-container">
+              <div class="project-video">
+                <video
+                  src="./videos/project5.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controlslist="nodownload  noremoteplayback"
+                ></video>
+              </div>
+              <div class="project-info">
+                <p class="project-category"> Redux–React & Express E-Commerce</p>
+                <strong class="project-title">
+                  <span style="color: #00fffb">Full-Stack E-Commerce App  more...</span>
+                </strong>
+              </div>
+
+              <!-- content of card end here -->
+            </div>
+          </div>
+        </a>
+
+
+
+
+        
+                        <svg class="svg-container">
+          <defs>
+            <filter
+              id="turbulent-displace"
+              colorInterpolationFilters="sRGB"
+              x="-20%"
+              y="-20%"
+              width="140%"
+              height="140%"
+            >
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="1"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                <animate
+                  attributeName="dy"
+                  values="700; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="1"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                <animate
+                  attributeName="dy"
+                  values="0; -700"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise1"
+                seed="2"
+              />
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+                <animate
+                  attributeName="dx"
+                  values="490; 0"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feTurbulence
+                type="turbulence"
+                baseFrequency="0.02"
+                numOctaves="10"
+                result="noise2"
+                seed="2"
+              />
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+                <animate
+                  attributeName="dx"
+                  values="0; -490"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  calcMode="linear"
+                />
+              </feOffset>
+
+              <feComposite
+                in="offsetNoise1"
+                in2="offsetNoise2"
+                result="part1"
+              />
+              <feComposite
+                in="offsetNoise3"
+                in2="offsetNoise4"
+                result="part2"
+              />
+              <feBlend
+                in="part1"
+                in2="part2"
+                mode="color-dodge"
+                result="combinedNoise"
+              />
+
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="combinedNoise"
+                scale="30"
+                xChannelSelector="R"
+                yChannelSelector="B"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <a href="./projects_pages/project6.html">
+          <div class="card-container">
+            <div class="inner-container">
+              <div class="border-outer">
+                <div class="main-card"></div>
+              </div>
+              <div class="glow-layer-1"></div>
+              <div class="glow-layer-2"></div>
+            </div>
+
+            <div class="overlay-1"></div>
+            <div class="overlay-2"></div>
+            <div class="background-glow"></div>
+
+            <!-- content of card -->
+
+            <div class="content-container">
+              <div class="project-video">
+                <video
+                  src="./videos/project6.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controlslist="nodownload  noremoteplayback"
+                ></video>
+              </div>
+              <div class="project-info">
+                <p class="project-category">Full-Stack Portfolio</p>
+                <strong class="project-title">
+                  <span style="color: #00fffb">Portfolio Sharing Platform more...</span>
+                </strong>
+              </div>
+
+              <!-- content of card end here -->
+            </div>
+          </div>
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </main>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="cards contact" id="contact">
+      <h2 class="title">Let's work together</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="info">
+            <h3>
+              <a
+                href="https://wa.me/9647808280053"
+                target="_blank"
+                style="text-decoration: none; color: black"
+                >WhatsApp</a
+              >
+            </h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="info">
+            <h3>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=scarface.naser@gmail.com"
+                target="_blank"
+                style="text-decoration: none; color: black"
+              >
+                Email
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-title">Copyrights @ <span>Naser Almurad</span></p>
+      <div class="social-icons">
+                  <a href="https://github.com/scarface-naser" title="github">
+            <lottie-player
+            src="gitHubiCon.json"
+            background="transparent"
+            speed="1"
+            style="width: 60px; height: 60px"
+            loop
+            autoplay
+          >
+          </a>
+          <a href="https://www.instagram.com/infinity.ai1?igsh=MWdpeTVmN2VicGhqOA%3D%3D&utm_source=qr" title="Instagram"><lottie-player
+            src="instagramIcon.json"
+            background="transparent"
+            speed="1"
+            style="width: 60px; height: 60px"
+            loop
+            autoplay
+          ></i>
+        </a>
+
+          <a href="#" title="LinkedIN">
+            <lottie-player
+            src="linkedinIcon.json"
+            background="transparent"
+            speed="1"
+            style="width: 60px; height: 60px"
+            loop
+            autoplay>
+          </a>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("navigation");
+
+// Toggle nav visibility
+toggle.addEventListener("click", (event) => {
+  event.stopPropagation(); // Prevent click from bubbling to document
+  nav.classList.toggle("active");
+});
+
+// Close nav when clicking outside of it
+document.addEventListener("click", (event) => {
+  // Check if click is outside the navigation and toggle button
+  if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+    nav.classList.remove("active");
+  }
+});
+
+// Close nav when scrolling
+window.addEventListener("scroll", () => {
+  nav.classList.remove("active");
+});
+
+// Animation on load
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
+// download the cv
+
+  function downloadCV() {
+    // Replace with the actual path to your CV file
+    const link = document.createElement("a");
+    link.href = "./cv/Naser_cv.pdf"; // your CV file path (can be in same folder)
+    link.download = "Naser Almurad CV.pdf"; // name of the downloaded file
+    link.click();
+  }
+
+    </script>
+  </body>
+</html>
